@@ -10,7 +10,7 @@ def line(queue)
     while i < queue.length
       print " #{i+1}. queue[i]"
       i += 1
-    end 
+    end
     #queue.each_with_index {|customer,index| puts "#{index+1}. #{customer} "}
   end
 end
