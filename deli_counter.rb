@@ -8,7 +8,7 @@ def line(queue)
     i = 0
     puts "The line is currently:"
     while i < queue.length
-      print " #{i+1}. queue[i]"
+      puts " #{i+1}. queue[i]"
       i += 1
     end
     #queue.each_with_index {|customer,index| puts "#{index+1}. #{customer} "}
