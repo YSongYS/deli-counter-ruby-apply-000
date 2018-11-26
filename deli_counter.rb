@@ -5,12 +5,9 @@ def line(queue)
   if queue.length == 0
     puts "The line is currently empty."
   else
-    i = 0
-    puts "The line is currently:"
-    while i < queue.length
-      puts " #{i+1}. queue[i]"
-      i += 1
-    end
+    queue_annoucement = "The line is currently:"
+    queue.each_with_index { |customer,index| queue_annoucement << "#{index+1}. #{customer} " }
+    puts "#{queue_annoucement}"
     #queue.each_with_index {|customer,index| puts "#{index+1}. #{customer} "}
   end
 end
