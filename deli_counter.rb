@@ -6,7 +6,7 @@ def line(queue)
     puts "The line is currently empty."
   else
     queue_annoucement = "The line is currently:"
-    queue.each_with_index { |customer,index| queue_annoucement << "#{index+1}. #{customer} " }
+    queue.each_with_index { |customer,index| queue_annoucement << " #{index+1}. #{customer}" }
     puts "#{queue_annoucement}"
     #queue.each_with_index {|customer,index| puts "#{index+1}. #{customer} "}
   end
