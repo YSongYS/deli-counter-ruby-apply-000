@@ -6,7 +6,7 @@ def line(queue)
     puts "The line is currently empty."
   else
     i = 0
-    print "The line is currently:"
+    puts "The line is currently:"
     while i < queue.length
       print " #{i+1}. queue[i]"
       i += 1
