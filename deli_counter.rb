@@ -1,5 +1,5 @@
 # Write your code here.
-katz_deli=[]
+queue = []
 
 def line(queue)
   if queue.length == 0
@@ -8,8 +8,8 @@ def line(queue)
     queue_annoucement = "The line is currently:"
     queue.each_with_index { |customer,index| queue_annoucement << " #{index+1}. #{customer}" }
     puts "#{queue_annoucement}"
-    #queue.each_with_index {|customer,index| print "#{index+1}. #{customer} "}
-    #why doesn't print work???
+    #queue.each_with_index {|customer,index| print " #{index+1}. #{customer}"}
+    #why doesn't print work?
   end
 end
 
@@ -28,3 +28,12 @@ def now_serving(queue)
   end
   queue
 end
+
+counter = 0
+def day_counter(queue, counter)
+  counter = counter + 1
+  queue << counter
+  puts "Welcome to the deli, you are the no. #{counter} customer we are serving today!"
+end
+
+day_counter(queue, counter)
